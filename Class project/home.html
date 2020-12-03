@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>home</title>
+        <link rel="stylesheet" href="base.css">
+        <script>
+            function change(num){
+                var p = 'image/p' + num +'.jpg';
+                document.getElementById("mainImage").src = p;
+                if(num == 1)
+                    document.getElementById("mainUrl").href="https://www.aum.edu/wp-content/uploads/2020/09/OUM_20_00715-MA-Best-of-Montgomey_Best-of-Autauga_690x460_Rotator.jpg";
+                else if(num == 2)
+                    document.getElementById("mainUrl").href="https://www.aum.edu/soar";
+                else if(num == 3)
+                    document.getElementById("mainUrl").href="https://www.aum.edu/wp-content/uploads/2020/09/OUM_20_00811-Apply-now-assets_Rotator-graphic_new_Site-3.jpg";
+                else if(num == 4)
+                    document.getElementById("mainUrl").href="https://www.aum.edu/wp-content/uploads/2020/10/SA_20_01023-SWOT-team-application-graphic.jpg";
+                else if(num == 5)
+                    document.getElementById("mainUrl").href="https://www.aum.edu/wp-content/uploads/2020/08/OUM_20_00615_Military690x460_Rotator.jpg";
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <nav>
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="CS.html">CS Program</a></li>
+                <li><a href="taa.html">TA Application</a></li>
+                <li><a href="gpqCal.html">GPA Calculator</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="showpic">
+                    <a id="mainUrl" href="https://www.aum.edu/wp-content/uploads/2020/09/OUM_20_00715-MA-Best-of-Montgomey_Best-of-Autauga_690x460_Rotator.jpg"><img id="mainImage" src="image/p1.jpg"></a>
+                </div>
+                <ul class="thumbs">
+                    <li onclick="change(1)"><img src="image/p1.jpg"></li>
+                    <li onclick="change(2)"><img src="image/p2.jpg"></li>
+                    <li onclick="change(3)"><img src="image/p3.jpg"></li>
+                    <li onclick="change(4)"><img src="image/p4.jpg"></li>
+                    <li onclick="change(5)"><img src="image/p5.jpg"></li>
+                </ul>
+            </main>
+            <footer>
+                Copyright &copy; AUM_CSCI_4970<br>
+                <a href="mailto:cwang1@aum.edu">cwang1@aum.edu</a>
+           </footer>
+        </div>
+    </body>
+  
+</html>
+    
